@@ -13,5 +13,8 @@ environment:
     - PYTHON: "C:\\Python35-x64"
     - PYTHON: "C:\\Python36-x64"
 
+bbuild: off
+deploy: off
+
 test_script:
   - "%PYTHON%\\python.exe -m unittest discover tests"

@@ -6,7 +6,7 @@ SECURESTRING_DECRYPT_CMD = '$s = ConvertTo-SecureString -String \'{0}\'; [System
 
 def encrypt(plain_text):
     ''' encrypt plain text by SecureString. '''
-    
+
     cmd = POWERSHELL.format(SECURESTRING_ENCRYPT_CMD.format(plain_text))
     return _execute(cmd)
 
@@ -26,7 +26,7 @@ def _execute(cmd):
     # check status code is ok
     # if it's not, will raise RuntimeError exception
     if p.returncode != 0:
-        raise RuntimeError('"{0}" run fails, err={1}'.format(cmd, stderr.decode('sjis')))
+        raise RuntimeError('"{0}" run fails, err={1}'.format(cmd, stderr.decode('utf-8', errors='replace')))
     
     # return stdout utf-8 string
     return stdout.decode('utf-8').replace('\r\n', '')

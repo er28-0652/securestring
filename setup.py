@@ -2,7 +2,7 @@ from setuptools import setup
 
 
 setup(
-    name='securestring',
+    name='py-securestring',
     version='0.1',
     description='SecureString wrapper written by Python.',
     url='https://github.com/er28-0652/securestring',

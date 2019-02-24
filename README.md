@@ -1,3 +1,5 @@
+[![Build status](https://ci.appveyor.com/api/projects/status/cxc3lbdi0hjv3x73?svg=true)](https://ci.appveyor.com/project/er28-0652/securestring)  
+
 # securestring
 
 Windows SecureString wrapper written by Python.  

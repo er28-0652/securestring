@@ -3,7 +3,7 @@ from securestring import securestring
 
 TESTS = [
     'tesuya',
-    'ユニコード'
+    'testtest'
 ]
 
 class TestSecureString(unittest.TestCase):

@@ -7,10 +7,13 @@ This script uses PowerShell as a backend, thus available only in Windows.
 
 ## Install
 ```bash
-$ pip install securestring
+$ pip install py-securestring
 ```
 
 ## Usage
+
+use as module
+
 ```python
 from securestring import securestring
 
@@ -20,4 +23,10 @@ enc = securestring.encrypt(plain_text)
 
 dec = securestring.decrypt(enc)
 # tesuya
+```
+
+use from commandline
+
+```bash
+python -m securestring encrypt tesuya
 ```

@@ -18,7 +18,7 @@ def main():
     args = p.parse_args()
 
     # run command
-    args.handler(args.target)
+    print(args.handler(args.target))
 
 if __name__ == '__main__':
     main()

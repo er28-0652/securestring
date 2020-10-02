@@ -1,7 +1,7 @@
 import subprocess
 
 POWERSHELL = 'powershell -c "{0}"'
-SECURESTRING_ENCRYPT_CMD = 'ConvertTo-SecureString "{0}" -AsPlainText -Force | ConvertFrom-SecureString'
+SECURESTRING_ENCRYPT_CMD = 'ConvertTo-SecureString \'{0}\' -AsPlainText -Force | ConvertFrom-SecureString'
 SECURESTRING_DECRYPT_CMD = '$s = ConvertTo-SecureString -String \'{0}\'; [System.Runtime.InteropServices.marshal]::PtrToStringAuto([System.Runtime.InteropServices.Marshal]::SecureStringToBSTR($s))'
 
 def encrypt(plain_text):
